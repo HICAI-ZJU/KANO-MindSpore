@@ -4,7 +4,7 @@
 
 # Knowledge graph-enhanced molecular contrastive learning with functional prompt
 
-This repository is the official implementation of **KANO**, which is model proposed in a paper: [**Knowledge graph-enhanced molecular contrastive learning with functional prompt**](https://www.nature.com/articles/s42256-023-00654-0). 
+This repository is the official implementation of **KANO** based on [**MindSpore**](https://www.mindspore.cn/), which is model proposed in a paper: [**Knowledge graph-enhanced molecular contrastive learning with functional prompt**](https://www.nature.com/articles/s42256-023-00654-0). 
 
 <!--  
 # Contributor
@@ -158,11 +158,8 @@ We also support specifying a dataset as the input for the train/val/test sets by
 
 # 🫱🏻‍🫲🏾 Acknowledgements
 Thanks for the following released code bases:
->[chemprop](https://github.com/chemprop/chemprop), [torchlight](https://github.com/RamonYeung/torchlight), [RDKit](https://github.com/rdkit/rdkit), [KCL](https://github.com/ZJU-Fangyin/KCL)
+>[chemprop](https://github.com/chemprop/chemprop), [torchlight](https://github.com/RamonYeung/torchlight), [RDKit](https://github.com/rdkit/rdkit), [KCL](https://github.com/ZJU-Fangyin/KCL), [KANO](https://github.com/HICAI-ZJU/KANO)
 
-
-# About
-Should you have any questions, please feel free to contact Miss Yin Fang at fangyin@zju.edu.cn.
 
 
 # References
