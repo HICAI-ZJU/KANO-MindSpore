@@ -4,7 +4,7 @@
 
 # Knowledge graph-enhanced molecular contrastive learning with functional prompt
 
-This repository is the official implementation of **KANO** based on [**MindSpore**](https://www.mindspore.cn/), which is model proposed in a paper: [**Knowledge graph-enhanced molecular contrastive learning with functional prompt**](https://www.nature.com/articles/s42256-023-00654-0). 
+This repository is the official [**MindSpore**](https://www.mindspore.cn/) implementation of **KANO**, which is model proposed in a paper: [**Knowledge graph-enhanced molecular contrastive learning with functional prompt**](https://www.nature.com/articles/s42256-023-00654-0). 
 
 <!--  
 # Contributor
