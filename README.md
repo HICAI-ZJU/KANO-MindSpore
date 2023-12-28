@@ -46,7 +46,7 @@ Owlready2       0.37
 This project mainly contains the following parts.
 
 ```
-├── chemprop_ms                        # molecular graph preprocessing, data splitting, loss function and graph encoder
+├── chemprop_ms                     # molecular graph preprocessing, data splitting, loss function and graph encoder
 ├── data                            # sore the molecular datasets for pre-training and fine-tuning
 │   ├── bace.csv                    # downstream dataset BACE
 │   ├── bbbp.csv                    # downstream dataset BBBP
@@ -63,7 +63,7 @@ This project mainly contains the following parts.
 │   ├── tox21.csv                   # downstream dataset Tox21
 │   ├── toxcast.csv                 # downstream dataset ToxCast
 │   └── zinc15_250K.csv             # pre-train dataset ZINC250K
-├── ckpt                         # store the checkpoints of the model 
+├── ckpt                            # store the checkpoints of the model 
 ├── finetune.sh                     # conduct fine-tuning
 ├── initial                         # store the embeddings of ElementKG, and preprocess it for the model
 ├── KGembedding                     # store ElementKG, and get the embeddings of eneities and relations in ElementKG
