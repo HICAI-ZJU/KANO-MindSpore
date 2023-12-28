@@ -32,14 +32,13 @@ We propose a **K**nowledge graph-enhanced molecular contr**A**stive learning wit
 To run our code, please install dependency packages.
 ```
 python          3.7
-torch           1.13.1
+mindpore        2.0.0
 rdkit           2018.09.3
 numpy           1.20.3
 gensim          4.2.0
 nltk            3.4.5
 owl2vec-star    0.2.1
 Owlready2       0.37
-torch-scatter   2.0.9
 ```
 
 # 📚 Overview
@@ -47,7 +46,7 @@ torch-scatter   2.0.9
 This project mainly contains the following parts.
 
 ```
-├── chemprop                        # molecular graph preprocessing, data splitting, loss function and graph encoder
+├── chemprop_ms                        # molecular graph preprocessing, data splitting, loss function and graph encoder
 ├── data                            # sore the molecular datasets for pre-training and fine-tuning
 │   ├── bace.csv                    # downstream dataset BACE
 │   ├── bbbp.csv                    # downstream dataset BBBP
@@ -64,8 +63,7 @@ This project mainly contains the following parts.
 │   ├── tox21.csv                   # downstream dataset Tox21
 │   ├── toxcast.csv                 # downstream dataset ToxCast
 │   └── zinc15_250K.csv             # pre-train dataset ZINC250K
-├── dumped                          # store the training log and checkpoints of the model 
-│   └── pretrained_graph_encoder    # the pre-trained model
+├── ckpt                         # store the checkpoints of the model 
 ├── finetune.sh                     # conduct fine-tuning
 ├── initial                         # store the embeddings of ElementKG, and preprocess it for the model
 ├── KGembedding                     # store ElementKG, and get the embeddings of eneities and relations in ElementKG
@@ -76,10 +74,6 @@ This project mainly contains the following parts.
 
 # 🚀 Quick start
 
-If you want to use our pre-trained model directly for molecular property prediction, please run the following command:
-```sh
->> bash finetune.sh
-```
 
 | Parameter | Description | Default Value |
 | --- | --- | --- |
@@ -115,7 +109,7 @@ Note that if you change the `data_path`, don't forget to change the correspondin
     --step 'functional_prompt' \
     --exp_name finetune \
     --exp_id qm7 \
-    --checkpoint_path "./dumped/pretrained_graph_encoder/original_CMPN_0623_1350_14000th_epoch.pkl"
+    --checkpoint_path "./ckpt/model_new1_original11.ckpt"
 ```
 
 # ⚙ Step-by-step guidelines
