@@ -109,7 +109,7 @@ Note that if you change the `data_path`, don't forget to change the correspondin
     --step 'functional_prompt' \
     --exp_name finetune \
     --exp_id qm7 \
-    --checkpoint_path "./ckpt/model_new1_original11.ckpt"
+    --checkpoint_path "./ckpt/model_original37.ckpt"
 ```
 
 # ⚙ Step-by-step guidelines
@@ -133,7 +133,7 @@ We collect 250K unlabeled molecules sampled from the ZINC 15 datasets to pre-tra
 | gpu | Which GPU to use | None |
 | batch_size | Batch size | 50 |
 
-You can change these parameters directly in `pretrain.py`. In our setting, we set `epochs` and `batch_size` to `50` and `1024`, respectively. We also provided pre-trained models, which you can download from [`dumped/pretrained_graph_encoder/original_CMPN_0623_1350_14000th_epoch.pkl`](dumped/pretrained_graph_encoder/original_CMPN_0623_1350_14000th_epoch.pkl). 
+You can change these parameters directly in `pretrain.py`. In our setting, we set `epochs` and `batch_size` to `50` and `1024`, respectively. We also provided pre-trained models, which you can download from [`ckpt/model_original37.ckpt`](ckpt/model_original37.ckpt). 
 
 ### Prompt-enhanced fine-tuning
 
